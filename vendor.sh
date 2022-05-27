@@ -19,7 +19,6 @@ grammars=(
     ["html"]="v0.19.0;parser.c;scanner.cc;tag.h"
     ["java"]="v0.19.1;parser.c"
     ["javascript"]="v0.19.0;parser.c;scanner.c"
-    ["lua"]="master;parser.c;scanner.cc"
     ["ocaml"]="v0.19.0"
     ["php"]="v0.19.0;parser.c;scanner.cc"
     ["protobuf"]="main;parser.c"
@@ -31,18 +30,19 @@ grammars=(
     ["toml"]="v0.5.1;parser.c;scanner.c"
     ["typescript"]="v0.19.0"
     ["yaml"]="v0.5.0;parser.c;scanner.cc;schema.generated.cc"
+    ["mustard"]="master;parser.c;scanner.c"
 )
 
 declare -A repositories
 repositories=(
     ["elm"]="elm-tooling/tree-sitter-elm"
-    ["lua"]="tjdevries/tree-sitter-lua"
     ["yaml"]="ikatyang/tree-sitter-yaml"
     ["toml"]="ikatyang/tree-sitter-toml"
     ["svelte"]="Himujjal/tree-sitter-svelte"
     ["hcl"]="mitchellh/tree-sitter-hcl"
     ["dockerfile"]="camdencheek/tree-sitter-dockerfile"
     ["protobuf"]="mitchellh/tree-sitter-proto"
+    ["mustard"]="dcdc-io/tree-sitter-mustard"
 )
 
 

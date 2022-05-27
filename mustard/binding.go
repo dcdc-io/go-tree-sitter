@@ -1,7 +1,7 @@
-package lua
+package mustard
 
 //#include "parser.h"
-//TSLanguage *tree_sitter_lua();
+//TSLanguage *tree_sitter_mustard();
 import "C"
 import (
 	"unsafe"
@@ -10,6 +10,6 @@ import (
 )
 
 func GetLanguage() *sitter.Language {
-	ptr := unsafe.Pointer(C.tree_sitter_lua())
+	ptr := unsafe.Pointer(C.tree_sitter_mustard())
 	return sitter.NewLanguage(ptr)
 }
