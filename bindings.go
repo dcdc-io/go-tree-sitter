@@ -423,6 +423,12 @@ func (n Node) EndPoint() Point {
 	}
 }
 
+func (n Node) Location() Range {
+	return Range{
+		n.StartPoint(), n.EndPoint(), n.StartByte(), n.EndByte(),
+	}
+}
+
 // Symbol returns the node's type as a Symbol.
 func (n Node) Symbol() Symbol {
 	return C.ts_node_symbol(n.c)
@@ -523,7 +529,7 @@ func (n Node) ChildByFieldName(name string) *Node {
 
 // FieldNameForChild returns the field name of the child at the given index, or "" if not named.
 func (n Node) FieldNameForChild(idx int) string {
-       return C.GoString(C.ts_node_field_name_for_child(n.c, C.uint32_t(idx)))
+	return C.GoString(C.ts_node_field_name_for_child(n.c, C.uint32_t(idx)))
 }
 
 // NextSibling returns the node's next sibling.
