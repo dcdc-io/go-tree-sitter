@@ -4,8 +4,8 @@ import (
 	"context"
 	"testing"
 
-	sitter "github.com/smacker/go-tree-sitter"
-	"github.com/smacker/go-tree-sitter/php"
+	sitter "github.com/dcdc-io/go-tree-sitter"
+	"github.com/dcdc-io/go-tree-sitter/php"
 	"github.com/stretchr/testify/assert"
 )
 
